@@ -1,0 +1,2820 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>KidsZone - Unleash the Fun!</title>
+		<link
+			rel="icon"
+			type="image/png"
+			href="ecommerce/assets/tw-favicon.png" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+			rel="stylesheet" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;display=swap"
+			rel="stylesheet" />
+
+		<style>
+			body {
+				font-family: "Fredoka", sans-serif;
+				scroll-behavior: smooth;
+			}
+
+			.bg-kids-pattern {
+				background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+			}
+
+			.carousel {
+				scroll-snap-type: x mandatory;
+				scroll-behavior: smooth;
+			}
+
+			.carousel-item {
+				scroll-snap-align: start;
+			}
+
+			.sticky-cta {
+				box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+			}
+
+			.testimonial-carousel {
+				animation: scroll 30s linear infinite;
+			}
+
+			@keyframes scroll {
+				0% {
+					transform: translateX(0);
+				}
+				100% {
+					transform: translateX(-100%);
+				}
+			}
+
+			.play-zone-card:hover {
+				transform: translateY(-10px);
+				transition: transform 0.3s ease;
+			}
+
+			.faq-item:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+		</style>
+		<style>
+			*,
+			::before,
+			::after {
+				--tw-border-spacing-x: 0;
+				--tw-border-spacing-y: 0;
+				--tw-translate-x: 0;
+				--tw-translate-y: 0;
+				--tw-rotate: 0;
+				--tw-skew-x: 0;
+				--tw-skew-y: 0;
+				--tw-scale-x: 1;
+				--tw-scale-y: 1;
+				--tw-pan-x: ;
+				--tw-pan-y: ;
+				--tw-pinch-zoom: ;
+				--tw-scroll-snap-strictness: proximity;
+				--tw-gradient-from-position: ;
+				--tw-gradient-via-position: ;
+				--tw-gradient-to-position: ;
+				--tw-ordinal: ;
+				--tw-slashed-zero: ;
+				--tw-numeric-figure: ;
+				--tw-numeric-spacing: ;
+				--tw-numeric-fraction: ;
+				--tw-ring-inset: ;
+				--tw-ring-offset-width: 0px;
+				--tw-ring-offset-color: #fff;
+				--tw-ring-color: rgb(59 130 246 / 0.5);
+				--tw-ring-offset-shadow: 0 0 #0000;
+				--tw-ring-shadow: 0 0 #0000;
+				--tw-shadow: 0 0 #0000;
+				--tw-shadow-colored: 0 0 #0000;
+				--tw-blur: ;
+				--tw-brightness: ;
+				--tw-contrast: ;
+				--tw-grayscale: ;
+				--tw-hue-rotate: ;
+				--tw-invert: ;
+				--tw-saturate: ;
+				--tw-sepia: ;
+				--tw-drop-shadow: ;
+				--tw-backdrop-blur: ;
+				--tw-backdrop-brightness: ;
+				--tw-backdrop-contrast: ;
+				--tw-backdrop-grayscale: ;
+				--tw-backdrop-hue-rotate: ;
+				--tw-backdrop-invert: ;
+				--tw-backdrop-opacity: ;
+				--tw-backdrop-saturate: ;
+				--tw-backdrop-sepia: ;
+				--tw-contain-size: ;
+				--tw-contain-layout: ;
+				--tw-contain-paint: ;
+				--tw-contain-style: ;
+			}
+			::backdrop {
+				--tw-border-spacing-x: 0;
+				--tw-border-spacing-y: 0;
+				--tw-translate-x: 0;
+				--tw-translate-y: 0;
+				--tw-rotate: 0;
+				--tw-skew-x: 0;
+				--tw-skew-y: 0;
+				--tw-scale-x: 1;
+				--tw-scale-y: 1;
+				--tw-pan-x: ;
+				--tw-pan-y: ;
+				--tw-pinch-zoom: ;
+				--tw-scroll-snap-strictness: proximity;
+				--tw-gradient-from-position: ;
+				--tw-gradient-via-position: ;
+				--tw-gradient-to-position: ;
+				--tw-ordinal: ;
+				--tw-slashed-zero: ;
+				--tw-numeric-figure: ;
+				--tw-numeric-spacing: ;
+				--tw-numeric-fraction: ;
+				--tw-ring-inset: ;
+				--tw-ring-offset-width: 0px;
+				--tw-ring-offset-color: #fff;
+				--tw-ring-color: rgb(59 130 246 / 0.5);
+				--tw-ring-offset-shadow: 0 0 #0000;
+				--tw-ring-shadow: 0 0 #0000;
+				--tw-shadow: 0 0 #0000;
+				--tw-shadow-colored: 0 0 #0000;
+				--tw-blur: ;
+				--tw-brightness: ;
+				--tw-contrast: ;
+				--tw-grayscale: ;
+				--tw-hue-rotate: ;
+				--tw-invert: ;
+				--tw-saturate: ;
+				--tw-sepia: ;
+				--tw-drop-shadow: ;
+				--tw-backdrop-blur: ;
+				--tw-backdrop-brightness: ;
+				--tw-backdrop-contrast: ;
+				--tw-backdrop-grayscale: ;
+				--tw-backdrop-hue-rotate: ;
+				--tw-backdrop-invert: ;
+				--tw-backdrop-opacity: ;
+				--tw-backdrop-saturate: ;
+				--tw-backdrop-sepia: ;
+				--tw-contain-size: ;
+				--tw-contain-layout: ;
+				--tw-contain-paint: ;
+				--tw-contain-style: ;
+			} /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+			*,
+			::after,
+			::before {
+				box-sizing: border-box;
+				border-width: 0;
+				border-style: solid;
+				border-color: #e5e7eb;
+			}
+			::after,
+			::before {
+				--tw-content: "";
+			}
+			:host,
+			html {
+				line-height: 1.5;
+				-webkit-text-size-adjust: 100%;
+				-moz-tab-size: 4;
+				tab-size: 4;
+				font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+					"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				font-feature-settings: normal;
+				font-variation-settings: normal;
+				-webkit-tap-highlight-color: transparent;
+			}
+			body {
+				margin: 0;
+				line-height: inherit;
+			}
+			hr {
+				height: 0;
+				color: inherit;
+				border-top-width: 1px;
+			}
+			abbr:where([title]) {
+				-webkit-text-decoration: underline dotted;
+				text-decoration: underline dotted;
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-size: inherit;
+				font-weight: inherit;
+			}
+			a {
+				color: inherit;
+				text-decoration: inherit;
+			}
+			b,
+			strong {
+				font-weight: bolder;
+			}
+			code,
+			kbd,
+			pre,
+			samp {
+				font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+					"Liberation Mono", "Courier New", monospace;
+				font-feature-settings: normal;
+				font-variation-settings: normal;
+				font-size: 1em;
+			}
+			small {
+				font-size: 80%;
+			}
+			sub,
+			sup {
+				font-size: 75%;
+				line-height: 0;
+				position: relative;
+				vertical-align: baseline;
+			}
+			sub {
+				bottom: -0.25em;
+			}
+			sup {
+				top: -0.5em;
+			}
+			table {
+				text-indent: 0;
+				border-color: inherit;
+				border-collapse: collapse;
+			}
+			button,
+			input,
+			optgroup,
+			select,
+			textarea {
+				font-family: inherit;
+				font-feature-settings: inherit;
+				font-variation-settings: inherit;
+				font-size: 100%;
+				font-weight: inherit;
+				line-height: inherit;
+				letter-spacing: inherit;
+				color: inherit;
+				margin: 0;
+				padding: 0;
+			}
+			button,
+			select {
+				text-transform: none;
+			}
+			button,
+			input:where([type="button"]),
+			input:where([type="reset"]),
+			input:where([type="submit"]) {
+				-webkit-appearance: button;
+				background-color: transparent;
+				background-image: none;
+			}
+			:-moz-focusring {
+				outline: auto;
+			}
+			:-moz-ui-invalid {
+				box-shadow: none;
+			}
+			progress {
+				vertical-align: baseline;
+			}
+			::-webkit-inner-spin-button,
+			::-webkit-outer-spin-button {
+				height: auto;
+			}
+			[type="search"] {
+				-webkit-appearance: textfield;
+				outline-offset: -2px;
+			}
+			::-webkit-search-decoration {
+				-webkit-appearance: none;
+			}
+			::-webkit-file-upload-button {
+				-webkit-appearance: button;
+				font: inherit;
+			}
+			summary {
+				display: list-item;
+			}
+			blockquote,
+			dd,
+			dl,
+			figure,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			hr,
+			p,
+			pre {
+				margin: 0;
+			}
+			fieldset {
+				margin: 0;
+				padding: 0;
+			}
+			legend {
+				padding: 0;
+			}
+			menu,
+			ol,
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			dialog {
+				padding: 0;
+			}
+			textarea {
+				resize: vertical;
+			}
+			input::placeholder,
+			textarea::placeholder {
+				opacity: 1;
+				color: #9ca3af;
+			}
+			[role="button"],
+			button {
+				cursor: pointer;
+			}
+			:disabled {
+				cursor: default;
+			}
+			audio,
+			canvas,
+			embed,
+			iframe,
+			img,
+			object,
+			svg,
+			video {
+				display: block;
+				vertical-align: middle;
+			}
+			img,
+			video {
+				max-width: 100%;
+				height: auto;
+			}
+			[hidden]:where(:not([hidden="until-found"])) {
+				display: none;
+			}
+			.container {
+				width: 100%;
+			}
+			@media (min-width: 640px) {
+				.container {
+					max-width: 640px;
+				}
+			}
+			@media (min-width: 768px) {
+				.container {
+					max-width: 768px;
+				}
+			}
+			@media (min-width: 1024px) {
+				.container {
+					max-width: 1024px;
+				}
+			}
+			@media (min-width: 1280px) {
+				.container {
+					max-width: 1280px;
+				}
+			}
+			@media (min-width: 1536px) {
+				.container {
+					max-width: 1536px;
+				}
+			}
+			.absolute {
+				position: absolute;
+			}
+			.relative {
+				position: relative;
+			}
+			.sticky {
+				position: sticky;
+			}
+			.bottom-0 {
+				bottom: 0px;
+			}
+			.left-0 {
+				left: 0px;
+			}
+			.right-0 {
+				right: 0px;
+			}
+			.right-1\/4 {
+				right: 25%;
+			}
+			.top-0 {
+				top: 0px;
+			}
+			.top-1\/4 {
+				top: 25%;
+			}
+			.z-10 {
+				z-index: 10;
+			}
+			.z-50 {
+				z-index: 50;
+			}
+			.mx-auto {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.-mr-6 {
+				margin-right: -1.5rem;
+			}
+			.-mt-6 {
+				margin-top: -1.5rem;
+			}
+			.mb-1 {
+				margin-bottom: 0.25rem;
+			}
+			.mb-10 {
+				margin-bottom: 2.5rem;
+			}
+			.mb-12 {
+				margin-bottom: 3rem;
+			}
+			.mb-2 {
+				margin-bottom: 0.5rem;
+			}
+			.mb-4 {
+				margin-bottom: 1rem;
+			}
+			.mb-6 {
+				margin-bottom: 1.5rem;
+			}
+			.mb-8 {
+				margin-bottom: 2rem;
+			}
+			.ml-1 {
+				margin-left: 0.25rem;
+			}
+			.ml-2 {
+				margin-left: 0.5rem;
+			}
+			.mr-2 {
+				margin-right: 0.5rem;
+			}
+			.mr-3 {
+				margin-right: 0.75rem;
+			}
+			.mt-1 {
+				margin-top: 0.25rem;
+			}
+			.mt-12 {
+				margin-top: 3rem;
+			}
+			.mt-8 {
+				margin-top: 2rem;
+			}
+			.inline-block {
+				display: inline-block;
+			}
+			.flex {
+				display: flex;
+			}
+			.grid {
+				display: grid;
+			}
+			.hidden {
+				display: none;
+			}
+			.h-10 {
+				height: 2.5rem;
+			}
+			.h-12 {
+				height: 3rem;
+			}
+			.h-16 {
+				height: 4rem;
+			}
+			.h-20 {
+				height: 5rem;
+			}
+			.h-4 {
+				height: 1rem;
+			}
+			.h-5 {
+				height: 1.25rem;
+			}
+			.h-6 {
+				height: 1.5rem;
+			}
+			.h-auto {
+				height: auto;
+			}
+			.h-full {
+				height: 100%;
+			}
+			.w-10 {
+				width: 2.5rem;
+			}
+			.w-12 {
+				width: 3rem;
+			}
+			.w-16 {
+				width: 4rem;
+			}
+			.w-20 {
+				width: 5rem;
+			}
+			.w-4 {
+				width: 1rem;
+			}
+			.w-5 {
+				width: 1.25rem;
+			}
+			.w-6 {
+				width: 1.5rem;
+			}
+			.w-full {
+				width: 100%;
+			}
+			.max-w-3xl {
+				max-width: 48rem;
+			}
+			.max-w-md {
+				max-width: 28rem;
+			}
+			.border-collapse {
+				border-collapse: collapse;
+			}
+			.rotate-12 {
+				--tw-rotate: 12deg;
+				transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+					rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+					skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+					scaleY(var(--tw-scale-y));
+			}
+			.rotate-3 {
+				--tw-rotate: 3deg;
+				transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+					rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+					skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+					scaleY(var(--tw-scale-y));
+			}
+			.rotate-6 {
+				--tw-rotate: 6deg;
+				transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+					rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+					skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+					scaleY(var(--tw-scale-y));
+			}
+			.scale-105 {
+				--tw-scale-x: 1.05;
+				--tw-scale-y: 1.05;
+				transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+					rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+					skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+					scaleY(var(--tw-scale-y));
+			}
+			.scale-110 {
+				--tw-scale-x: 1.1;
+				--tw-scale-y: 1.1;
+				transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+					rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+					skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+					scaleY(var(--tw-scale-y));
+			}
+			.transform {
+				transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+					rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+					skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+					scaleY(var(--tw-scale-y));
+			}
+			.grid-cols-1 {
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+			}
+			.grid-cols-3 {
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+			}
+			.flex-col {
+				flex-direction: column;
+			}
+			.flex-wrap {
+				flex-wrap: wrap;
+			}
+			.items-start {
+				align-items: flex-start;
+			}
+			.items-center {
+				align-items: center;
+			}
+			.justify-center {
+				justify-content: center;
+			}
+			.justify-between {
+				justify-content: space-between;
+			}
+			.gap-4 {
+				gap: 1rem;
+			}
+			.gap-6 {
+				gap: 1.5rem;
+			}
+			.gap-8 {
+				gap: 2rem;
+			}
+			.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+				--tw-space-x-reverse: 0;
+				margin-right: calc(1rem * var(--tw-space-x-reverse));
+				margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+			}
+			.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+				--tw-space-x-reverse: 0;
+				margin-right: calc(2rem * var(--tw-space-x-reverse));
+				margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+			}
+			.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+				--tw-space-y-reverse: 0;
+				margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+				margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+			}
+			.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+				--tw-space-y-reverse: 0;
+				margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+				margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+			}
+			.overflow-hidden {
+				overflow: hidden;
+			}
+			.overflow-x-auto {
+				overflow-x: auto;
+			}
+			.rounded {
+				border-radius: 0.25rem;
+			}
+			.rounded-2xl {
+				border-radius: 1rem;
+			}
+			.rounded-full {
+				border-radius: 9999px;
+			}
+			.rounded-lg {
+				border-radius: 0.5rem;
+			}
+			.rounded-xl {
+				border-radius: 0.75rem;
+			}
+			.rounded-bl-lg {
+				border-bottom-left-radius: 0.5rem;
+			}
+			.border-2 {
+				border-width: 2px;
+			}
+			.border-b {
+				border-bottom-width: 1px;
+			}
+			.border-l-4 {
+				border-left-width: 4px;
+			}
+			.border-blue-500 {
+				--tw-border-opacity: 1;
+				border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
+			}
+			.border-gray-200 {
+				--tw-border-opacity: 1;
+				border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+			}
+			.border-green-500 {
+				--tw-border-opacity: 1;
+				border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
+			}
+			.border-purple-500 {
+				--tw-border-opacity: 1;
+				border-color: rgb(168 85 247 / var(--tw-border-opacity, 1));
+			}
+			.border-white {
+				--tw-border-opacity: 1;
+				border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+			}
+			.border-yellow-500 {
+				--tw-border-opacity: 1;
+				border-color: rgb(234 179 8 / var(--tw-border-opacity, 1));
+			}
+			.bg-blue-100 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+			}
+			.bg-blue-200 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+			}
+			.bg-blue-500 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+			}
+			.bg-blue-600 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+			}
+			.bg-green-100 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(220 252 231 / var(--tw-bg-opacity, 1));
+			}
+			.bg-green-200 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(187 247 208 / var(--tw-bg-opacity, 1));
+			}
+			.bg-green-500 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+			}
+			.bg-green-600 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
+			}
+			.bg-orange-600 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
+			}
+			.bg-pink-100 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1));
+			}
+			.bg-pink-600 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(219 39 119 / var(--tw-bg-opacity, 1));
+			}
+			.bg-purple-100 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1));
+			}
+			.bg-purple-200 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(233 213 255 / var(--tw-bg-opacity, 1));
+			}
+			.bg-purple-50 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
+			}
+			.bg-purple-500 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
+			}
+			.bg-purple-600 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
+			}
+			.bg-purple-700 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
+			}
+			.bg-purple-800 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+			}
+			.bg-red-100 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
+			}
+			.bg-red-500 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+			}
+			.bg-transparent {
+				background-color: transparent;
+			}
+			.bg-white {
+				--tw-bg-opacity: 1;
+				background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+			}
+			.bg-yellow-100 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
+			}
+			.bg-yellow-200 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(254 240 138 / var(--tw-bg-opacity, 1));
+			}
+			.bg-yellow-400 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+			}
+			.bg-yellow-500 {
+				--tw-bg-opacity: 1;
+				background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
+			}
+			.bg-opacity-20 {
+				--tw-bg-opacity: 0.2;
+			}
+			.bg-opacity-30 {
+				--tw-bg-opacity: 0.3;
+			}
+			.bg-opacity-90 {
+				--tw-bg-opacity: 0.9;
+			}
+			.bg-gradient-to-br {
+				background-image: linear-gradient(
+					to bottom right,
+					var(--tw-gradient-stops)
+				);
+			}
+			.bg-gradient-to-r {
+				background-image: linear-gradient(to right, var(--tw-gradient-stops));
+			}
+			.from-blue-50 {
+				--tw-gradient-from: #eff6ff var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-blue-500 {
+				--tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-blue-900 {
+				--tw-gradient-from: #1e3a8a var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(30 58 138 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-green-50 {
+				--tw-gradient-from: #f0fdf4 var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(240 253 244 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-green-500 {
+				--tw-gradient-from: #22c55e var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-indigo-50 {
+				--tw-gradient-from: #eef2ff var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(238 242 255 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-pink-500 {
+				--tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-purple-100 {
+				--tw-gradient-from: #f3e8ff var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(243 232 255 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-purple-50 {
+				--tw-gradient-from: #faf5ff var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(250 245 255 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-purple-600 {
+				--tw-gradient-from: #9333ea var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(147 51 234 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-yellow-100 {
+				--tw-gradient-from: #fef9c3 var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(254 249 195 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-yellow-400 {
+				--tw-gradient-from: #facc15 var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(250 204 21 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.from-yellow-50 {
+				--tw-gradient-from: #fefce8 var(--tw-gradient-from-position);
+				--tw-gradient-to: rgb(254 252 232 / 0) var(--tw-gradient-to-position);
+				--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+			}
+			.to-blue-100 {
+				--tw-gradient-to: #dbeafe var(--tw-gradient-to-position);
+			}
+			.to-blue-600 {
+				--tw-gradient-to: #2563eb var(--tw-gradient-to-position);
+			}
+			.to-green-100 {
+				--tw-gradient-to: #dcfce7 var(--tw-gradient-to-position);
+			}
+			.to-green-600 {
+				--tw-gradient-to: #16a34a var(--tw-gradient-to-position);
+			}
+			.to-indigo-700 {
+				--tw-gradient-to: #4338ca var(--tw-gradient-to-position);
+			}
+			.to-orange-100 {
+				--tw-gradient-to: #ffedd5 var(--tw-gradient-to-position);
+			}
+			.to-orange-500 {
+				--tw-gradient-to: #f97316 var(--tw-gradient-to-position);
+			}
+			.to-pink-100 {
+				--tw-gradient-to: #fce7f3 var(--tw-gradient-to-position);
+			}
+			.to-pink-600 {
+				--tw-gradient-to: #db2777 var(--tw-gradient-to-position);
+			}
+			.to-purple-100 {
+				--tw-gradient-to: #f3e8ff var(--tw-gradient-to-position);
+			}
+			.to-purple-50 {
+				--tw-gradient-to: #faf5ff var(--tw-gradient-to-position);
+			}
+			.to-purple-900 {
+				--tw-gradient-to: #581c87 var(--tw-gradient-to-position);
+			}
+			.to-yellow-100 {
+				--tw-gradient-to: #fef9c3 var(--tw-gradient-to-position);
+			}
+			.to-yellow-500 {
+				--tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+			}
+			.to-yellow-600 {
+				--tw-gradient-to: #ca8a04 var(--tw-gradient-to-position);
+			}
+			.p-4 {
+				padding: 1rem;
+			}
+			.p-6 {
+				padding: 1.5rem;
+			}
+			.p-8 {
+				padding: 2rem;
+			}
+			.px-2 {
+				padding-left: 0.5rem;
+				padding-right: 0.5rem;
+			}
+			.px-3 {
+				padding-left: 0.75rem;
+				padding-right: 0.75rem;
+			}
+			.px-4 {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+			.px-6 {
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+			.px-8 {
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+			.py-1 {
+				padding-top: 0.25rem;
+				padding-bottom: 0.25rem;
+			}
+			.py-16 {
+				padding-top: 4rem;
+				padding-bottom: 4rem;
+			}
+			.py-2 {
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+			}
+			.py-20 {
+				padding-top: 5rem;
+				padding-bottom: 5rem;
+			}
+			.py-3 {
+				padding-top: 0.75rem;
+				padding-bottom: 0.75rem;
+			}
+			.text-left {
+				text-align: left;
+			}
+			.text-center {
+				text-align: center;
+			}
+			.text-right {
+				text-align: right;
+			}
+			.text-2xl {
+				font-size: 1.5rem;
+				line-height: 2rem;
+			}
+			.text-3xl {
+				font-size: 1.875rem;
+				line-height: 2.25rem;
+			}
+			.text-4xl {
+				font-size: 2.25rem;
+				line-height: 2.5rem;
+			}
+			.text-lg {
+				font-size: 1.125rem;
+				line-height: 1.75rem;
+			}
+			.text-sm {
+				font-size: 0.875rem;
+				line-height: 1.25rem;
+			}
+			.text-xl {
+				font-size: 1.25rem;
+				line-height: 1.75rem;
+			}
+			.font-bold {
+				font-weight: 700;
+			}
+			.font-medium {
+				font-weight: 500;
+			}
+			.font-normal {
+				font-weight: 400;
+			}
+			.text-blue-500 {
+				--tw-text-opacity: 1;
+				color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+			}
+			.text-blue-600 {
+				--tw-text-opacity: 1;
+				color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+			}
+			.text-blue-700 {
+				--tw-text-opacity: 1;
+				color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+			}
+			.text-blue-800 {
+				--tw-text-opacity: 1;
+				color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+			}
+			.text-gray-500 {
+				--tw-text-opacity: 1;
+				color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+			}
+			.text-gray-600 {
+				--tw-text-opacity: 1;
+				color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+			}
+			.text-gray-700 {
+				--tw-text-opacity: 1;
+				color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+			}
+			.text-green-500 {
+				--tw-text-opacity: 1;
+				color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+			}
+			.text-green-600 {
+				--tw-text-opacity: 1;
+				color: rgb(22 163 74 / var(--tw-text-opacity, 1));
+			}
+			.text-green-700 {
+				--tw-text-opacity: 1;
+				color: rgb(21 128 61 / var(--tw-text-opacity, 1));
+			}
+			.text-green-800 {
+				--tw-text-opacity: 1;
+				color: rgb(22 101 52 / var(--tw-text-opacity, 1));
+			}
+			.text-orange-600 {
+				--tw-text-opacity: 1;
+				color: rgb(234 88 12 / var(--tw-text-opacity, 1));
+			}
+			.text-pink-500 {
+				--tw-text-opacity: 1;
+				color: rgb(236 72 153 / var(--tw-text-opacity, 1));
+			}
+			.text-pink-600 {
+				--tw-text-opacity: 1;
+				color: rgb(219 39 119 / var(--tw-text-opacity, 1));
+			}
+			.text-pink-800 {
+				--tw-text-opacity: 1;
+				color: rgb(157 23 77 / var(--tw-text-opacity, 1));
+			}
+			.text-purple-600 {
+				--tw-text-opacity: 1;
+				color: rgb(147 51 234 / var(--tw-text-opacity, 1));
+			}
+			.text-purple-700 {
+				--tw-text-opacity: 1;
+				color: rgb(126 34 206 / var(--tw-text-opacity, 1));
+			}
+			.text-purple-800 {
+				--tw-text-opacity: 1;
+				color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+			}
+			.text-purple-900 {
+				--tw-text-opacity: 1;
+				color: rgb(88 28 135 / var(--tw-text-opacity, 1));
+			}
+			.text-red-500 {
+				--tw-text-opacity: 1;
+				color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+			}
+			.text-red-800 {
+				--tw-text-opacity: 1;
+				color: rgb(153 27 27 / var(--tw-text-opacity, 1));
+			}
+			.text-white {
+				--tw-text-opacity: 1;
+				color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+			}
+			.text-yellow-400 {
+				--tw-text-opacity: 1;
+				color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+			}
+			.text-yellow-500 {
+				--tw-text-opacity: 1;
+				color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+			}
+			.text-yellow-600 {
+				--tw-text-opacity: 1;
+				color: rgb(202 138 4 / var(--tw-text-opacity, 1));
+			}
+			.text-yellow-700 {
+				--tw-text-opacity: 1;
+				color: rgb(161 98 7 / var(--tw-text-opacity, 1));
+			}
+			.text-yellow-800 {
+				--tw-text-opacity: 1;
+				color: rgb(133 77 14 / var(--tw-text-opacity, 1));
+			}
+			.shadow-lg {
+				--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+					0 4px 6px -4px rgb(0 0 0 / 0.1);
+				--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+					0 4px 6px -4px var(--tw-shadow-color);
+				box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+					var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+			}
+			.shadow-md {
+				--tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+					0 2px 4px -2px rgb(0 0 0 / 0.1);
+				--tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+					0 2px 4px -2px var(--tw-shadow-color);
+				box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+					var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+			}
+			.shadow-xl {
+				--tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+					0 8px 10px -6px rgb(0 0 0 / 0.1);
+				--tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+					0 8px 10px -6px var(--tw-shadow-color);
+				box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+					var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+			}
+			.transition {
+				transition-property: color, background-color, border-color, fill, stroke,
+					opacity, box-shadow, transform, filter, -webkit-text-decoration-color,
+					-webkit-backdrop-filter;
+				transition-property: color, background-color, border-color,
+					text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+					filter, backdrop-filter;
+				transition-property: color, background-color, border-color,
+					text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+					filter, backdrop-filter, -webkit-text-decoration-color,
+					-webkit-backdrop-filter;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+				transition-duration: 150ms;
+			}
+			.hover\:scale-105:hover {
+				--tw-scale-x: 1.05;
+				--tw-scale-y: 1.05;
+				transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+					rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+					skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+					scaleY(var(--tw-scale-y));
+			}
+			.hover\:bg-blue-100:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-blue-600:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-blue-700:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-gray-100:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-green-100:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(220 252 231 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-green-700:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-orange-700:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(194 65 12 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-pink-100:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-pink-700:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(190 24 93 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-purple-700:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-purple-800:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-white:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-yellow-100:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:bg-yellow-600:hover {
+				--tw-bg-opacity: 1;
+				background-color: rgb(202 138 4 / var(--tw-bg-opacity, 1));
+			}
+			.hover\:text-purple-600:hover {
+				--tw-text-opacity: 1;
+				color: rgb(147 51 234 / var(--tw-text-opacity, 1));
+			}
+			.hover\:text-purple-900:hover {
+				--tw-text-opacity: 1;
+				color: rgb(88 28 135 / var(--tw-text-opacity, 1));
+			}
+			.hover\:underline:hover {
+				-webkit-text-decoration-line: underline;
+				text-decoration-line: underline;
+			}
+			@media (min-width: 768px) {
+				.md\:mb-0 {
+					margin-bottom: 0px;
+				}
+				.md\:flex {
+					display: flex;
+				}
+				.md\:hidden {
+					display: none;
+				}
+				.md\:w-1\/2 {
+					width: 50%;
+				}
+				.md\:grid-cols-2 {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+				.md\:grid-cols-3 {
+					grid-template-columns: repeat(3, minmax(0, 1fr));
+				}
+				.md\:flex-row {
+					flex-direction: row;
+				}
+				.md\:py-32 {
+					padding-top: 8rem;
+					padding-bottom: 8rem;
+				}
+				.md\:text-6xl {
+					font-size: 3.75rem;
+					line-height: 1;
+				}
+			}
+			@media (min-width: 1024px) {
+				.lg\:grid-cols-3 {
+					grid-template-columns: repeat(3, minmax(0, 1fr));
+				}
+				.lg\:grid-cols-4 {
+					grid-template-columns: repeat(4, minmax(0, 1fr));
+				}
+			}
+		</style>
+	</head>
+	<body class="bg-purple-50 bg-kids-pattern">
+		<!-- Navigation -->
+		<nav class="bg-white shadow-md sticky top-0 z-50">
+			<div class="container mx-auto px-4 py-3">
+				<div class="flex justify-between items-center">
+					<div class="flex items-center">
+						<div class="text-3xl font-bold text-purple-600">
+							<span class="text-yellow-500">Kids</span>Zone
+						</div>
+					</div>
+					<div class="hidden md:flex space-x-8 text-gray-700">
+						<a
+							href="#play-zones"
+							class="hover:text-purple-600 transition"
+							>Play Zones</a
+						>
+						<a
+							href="#parties"
+							class="hover:text-purple-600 transition"
+							>Parties</a
+						>
+						<a
+							href="#bowling"
+							class="hover:text-purple-600 transition"
+							>Bowling</a
+						>
+						<a
+							href="#classes"
+							class="hover:text-purple-600 transition"
+							>Classes</a
+						>
+						<a
+							href="#membership"
+							class="hover:text-purple-600 transition"
+							>Membership</a
+						>
+						<a
+							href="#contact"
+							class="hover:text-purple-600 transition"
+							>Contact</a
+						>
+					</div>
+					<div class="flex items-center space-x-4">
+						<a
+							href="#"
+							class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition"
+							>Login</a
+						>
+						<button class="md:hidden text-gray-700">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-6 w-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16M4 18h16"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section
+			class="relative bg-gradient-to-r from-purple-600 to-indigo-700 text-white py-20 md:py-32"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col md:flex-row items-center">
+					<div
+						class="md:w-1/2 mb-10 md:mb-0"
+						data-aos="fade-right"
+						data-aos-delay="200">
+						<h1 class="text-4xl md:text-6xl font-bold mb-4">
+							Unleash the Fun at KidsZone!
+						</h1>
+						<p class="text-xl mb-8">
+							Where imagination meets play and learning comes naturally.
+						</p>
+						<div class="flex flex-wrap gap-4">
+							<a
+								href="#parties"
+								class="bg-yellow-500 hover:bg-yellow-600 text-purple-900 font-bold py-3 px-8 rounded-full transition transform hover:scale-105"
+								>Book a Party</a
+							>
+							<a
+								href="#play-zones"
+								class="bg-white hover:bg-gray-100 text-purple-700 font-bold py-3 px-8 rounded-full transition transform hover:scale-105"
+								>View Activities</a
+							>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2"
+						data-aos="fade-left"
+						data-aos-delay="400">
+						<div class="relative">
+							<svg
+								class="w-full h-auto"
+								viewBox="0 0 500 400"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect
+									x="50"
+									y="50"
+									width="400"
+									height="300"
+									rx="20"
+									fill="#FFD166"></rect>
+								<circle
+									cx="150"
+									cy="150"
+									r="50"
+									fill="#EF476F"></circle>
+								<circle
+									cx="350"
+									cy="150"
+									r="50"
+									fill="#06D6A0"></circle>
+								<circle
+									cx="250"
+									cy="250"
+									r="70"
+									fill="#118AB2"></circle>
+								<path
+									d="M120,280 Q250,350 380,280"
+									stroke="#FFFFFF"
+									stroke-width="10"
+									fill="none"></path>
+								<circle
+									cx="150"
+									cy="150"
+									r="15"
+									fill="white"></circle>
+								<circle
+									cx="350"
+									cy="150"
+									r="15"
+									fill="white"></circle>
+								<circle
+									cx="150"
+									cy="150"
+									r="5"
+									fill="black"></circle>
+								<circle
+									cx="350"
+									cy="150"
+									r="5"
+									fill="black"></circle>
+							</svg>
+							<div
+								class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+								<div
+									class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg transform rotate-6">
+									<p class="text-purple-700 font-bold text-xl">
+										Fun for all ages!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="absolute bottom-0 left-0 w-full">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1440 320">
+					<path
+						fill="#fff"
+						fill-opacity="1"
+						d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+				</svg>
+			</div>
+		</section>
+
+		<!-- Play Zones Overview -->
+		<section
+			id="play-zones"
+			class="py-16 bg-white"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center text-purple-700 mb-12">
+					Our Amazing Play Zones
+				</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div
+						class="play-zone-card bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl shadow-lg p-6 text-white"
+						data-aos="flip-left"
+						data-aos-delay="100">
+						<div
+							class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-4">
+							<svg
+								class="w-10 h-10 text-pink-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2">Soft Play Paradise</h3>
+						<p class="mb-4">
+							Cushioned fun for our youngest adventurers with soft obstacles and
+							gentle challenges.
+						</p>
+						<a
+							href="#"
+							class="inline-block bg-white text-pink-600 px-4 py-2 rounded-full font-bold hover:bg-pink-100 transition"
+							>Explore</a
+						>
+					</div>
+
+					<div
+						class="play-zone-card bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl shadow-lg p-6 text-white"
+						data-aos="flip-left"
+						data-aos-delay="200">
+						<div
+							class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-4">
+							<svg
+								class="w-10 h-10 text-yellow-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2">Slides &amp; Ball Pits</h3>
+						<p class="mb-4">
+							Zoom down our colorful slides and dive into oceans of balls for
+							endless giggles.
+						</p>
+						<a
+							href="#"
+							class="inline-block bg-white text-yellow-600 px-4 py-2 rounded-full font-bold hover:bg-yellow-100 transition"
+							>Explore</a
+						>
+					</div>
+
+					<div
+						class="play-zone-card bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg p-6 text-white"
+						data-aos="flip-left"
+						data-aos-delay="300">
+						<div
+							class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-4">
+							<svg
+								class="w-10 h-10 text-blue-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2">Interactive Digital Walls</h3>
+						<p class="mb-4">
+							Touch-responsive games and activities that blend physical play
+							with digital magic.
+						</p>
+						<a
+							href="#"
+							class="inline-block bg-white text-blue-600 px-4 py-2 rounded-full font-bold hover:bg-blue-100 transition"
+							>Explore</a
+						>
+					</div>
+
+					<div
+						class="play-zone-card bg-gradient-to-br from-green-500 to-green-600 rounded-xl shadow-lg p-6 text-white"
+						data-aos="flip-left"
+						data-aos-delay="400">
+						<div
+							class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-4">
+							<svg
+								class="w-10 h-10 text-green-500"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2">Mini Climbing Zone</h3>
+						<p class="mb-4">
+							Safe climbing challenges for little explorers to build confidence
+							and coordination.
+						</p>
+						<a
+							href="#"
+							class="inline-block bg-white text-green-600 px-4 py-2 rounded-full font-bold hover:bg-green-100 transition"
+							>Explore</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Birthday & Party Booking -->
+		<section
+			id="parties"
+			class="py-16 bg-gradient-to-r from-purple-100 to-pink-100"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center text-purple-700 mb-4">
+					Birthday &amp; Party Packages
+				</h2>
+				<p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+					Make your child's special day unforgettable with our themed party
+					packages!
+				</p>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="zoom-in"
+						data-aos-delay="100">
+						<div class="bg-blue-500 text-white p-6">
+							<h3 class="text-2xl font-bold mb-2">Basic Package</h3>
+							<p class="text-3xl font-bold">$199</p>
+						</div>
+						<div class="p-6">
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									2-hour party for up to 10 kids
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Pizza &amp; juice for all guests
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Basic decorations
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									1 party host
+								</li>
+							</ul>
+							<button
+								class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition"
+								onclick="openPartyModal('Basic')">
+								Book Now
+							</button>
+						</div>
+					</div>
+
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border transform scale-105 z-10"
+						data-aos="zoom-in"
+						data-aos-delay="200">
+						<div class="bg-purple-600 text-white p-6 relative">
+							<div
+								class="absolute top-0 right-0 bg-yellow-400 text-purple-900 font-bold py-1 px-4 rounded-bl-lg">
+								POPULAR
+							</div>
+							<h3 class="text-2xl font-bold mb-2">Deluxe Package</h3>
+							<p class="text-3xl font-bold">$299</p>
+						</div>
+						<div class="p-6">
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									3-hour party for up to 15 kids
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Pizza, juice &amp; ice cream cake
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Premium themed decorations
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									2 party hosts &amp; organized games
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Goodie bags for all guests
+								</li>
+							</ul>
+							<button
+								class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition"
+								onclick="openPartyModal('Deluxe')">
+								Book Now
+							</button>
+						</div>
+					</div>
+
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="zoom-in"
+						data-aos-delay="300">
+						<div
+							class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white p-6">
+							<h3 class="text-2xl font-bold mb-2">VIP Package</h3>
+							<p class="text-3xl font-bold">$399</p>
+						</div>
+						<div class="p-6">
+							<ul class="space-y-3 mb-6">
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									4-hour party for up to 20 kids
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Full catering menu &amp; custom cake
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Luxury themed decorations
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									3 party hosts &amp; character visit
+								</li>
+								<li class="flex items-center">
+									<svg
+										class="w-5 h-5 text-green-500 mr-2"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+									Premium goodie bags &amp; photo booth
+								</li>
+							</ul>
+							<button
+								class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition"
+								onclick="openPartyModal('VIP')">
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-12 text-center">
+					<h3 class="text-2xl font-bold text-purple-700 mb-4">
+						Choose Your Party Theme
+					</h3>
+					<div class="flex flex-wrap justify-center gap-4 mb-8">
+						<div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+							Superhero
+						</div>
+						<div class="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">
+							Princess
+						</div>
+						<div class="bg-green-100 text-green-800 px-4 py-2 rounded-full">
+							Dinosaur
+						</div>
+						<div class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">
+							Space
+						</div>
+						<div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">
+							Pirate
+						</div>
+						<div class="bg-red-100 text-red-800 px-4 py-2 rounded-full">
+							Circus
+						</div>
+					</div>
+					<a
+						href="#"
+						class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105"
+						>Plan Your Party</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- Bowling for Kids -->
+		<section
+			id="bowling"
+			class="py-16 bg-gradient-to-r from-blue-900 to-purple-900 text-white"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col md:flex-row items-center">
+					<div
+						class="md:w-1/2 mb-10 md:mb-0"
+						data-aos="fade-right">
+						<h2 class="text-4xl font-bold mb-6">Kid-Friendly Bowling</h2>
+						<p class="text-lg mb-6">
+							Our specially designed bowling lanes are perfect for little
+							bowlers! With bumpers, lighter balls, and glow-in-the-dark fun,
+							kids of all ages can enjoy the thrill of knocking down pins.
+						</p>
+						<ul class="space-y-4 mb-8">
+							<li class="flex items-start">
+								<svg
+									class="w-6 h-6 text-yellow-400 mr-2 mt-1"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<span>Kid-sized bowling balls (6-10 lbs)</span>
+							</li>
+							<li class="flex items-start">
+								<svg
+									class="w-6 h-6 text-yellow-400 mr-2 mt-1"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<span>Automatic bumpers for younger players</span>
+							</li>
+							<li class="flex items-start">
+								<svg
+									class="w-6 h-6 text-yellow-400 mr-2 mt-1"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<span>Glow-in-the-dark weekend sessions</span>
+							</li>
+						</ul>
+						<div class="flex flex-wrap gap-4">
+							<a
+								href="#"
+								class="bg-yellow-500 hover:bg-yellow-600 text-purple-900 font-bold py-3 px-6 rounded-full transition"
+								>Book Bowling</a
+							>
+							<a
+								href="#"
+								class="bg-transparent border-2 border-white hover:bg-white hover:text-purple-900 text-white font-bold py-3 px-6 rounded-full transition"
+								>Birthday Packages</a
+							>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2"
+						data-aos="fade-left">
+						<div class="relative">
+							<svg
+								class="w-full h-auto"
+								viewBox="0 0 500 300"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect
+									x="50"
+									y="50"
+									width="400"
+									height="200"
+									rx="10"
+									fill="#8B4513"></rect>
+								<rect
+									x="70"
+									y="70"
+									width="360"
+									height="160"
+									rx="5"
+									fill="#D2B48C"></rect>
+								<circle
+									cx="100"
+									cy="150"
+									r="20"
+									fill="#000"></circle>
+								<circle
+									cx="150"
+									cy="150"
+									r="20"
+									fill="#000"></circle>
+								<circle
+									cx="200"
+									cy="150"
+									r="20"
+									fill="#000"></circle>
+								<rect
+									x="300"
+									y="130"
+									width="100"
+									height="40"
+									rx="5"
+									fill="#FFF"></rect>
+								<path
+									d="M350,90 L380,130 L320,130 Z"
+									fill="#FFF"></path>
+								<circle
+									cx="100"
+									cy="150"
+									r="5"
+									fill="#FFF"></circle>
+								<circle
+									cx="150"
+									cy="150"
+									r="5"
+									fill="#FFF"></circle>
+								<circle
+									cx="200"
+									cy="150"
+									r="5"
+									fill="#FFF"></circle>
+							</svg>
+							<div
+								class="absolute top-1/4 right-1/4 bg-yellow-400 text-purple-900 font-bold p-4 rounded-full transform rotate-12 shadow-lg">
+								<p>Glow Bowling<br />Every Weekend!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Learning Classes Section -->
+		<section
+			id="classes"
+			class="py-16 bg-white"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center text-purple-700 mb-4">
+					Learning Classes
+				</h2>
+				<p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+					Our educational programs are designed to support your child's
+					development through fun, engaging activities.
+				</p>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div
+						class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg p-6 border-l-4 border-green-500"
+						data-aos="fade-up"
+						data-aos-delay="100">
+						<div
+							class="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+							<svg
+								class="w-6 h-6"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 5l7 7-7 7"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-green-700 mb-2">
+							Listening Skills
+						</h3>
+						<p class="text-gray-700 mb-4">
+							Interactive activities that develop attention span and
+							comprehension through music, storytelling, and games.
+						</p>
+						<div class="flex items-center text-sm text-gray-500 mb-4">
+							<span class="bg-green-200 text-green-800 px-2 py-1 rounded mr-2"
+								>Ages 2-5</span
+							>
+							<span>45 min sessions</span>
+						</div>
+						<a
+							href="#"
+							class="text-green-600 font-bold hover:underline flex items-center">
+							Learn More
+							<svg
+								class="w-4 h-4 ml-1"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</a>
+					</div>
+
+					<div
+						class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg p-6 border-l-4 border-blue-500"
+						data-aos="fade-up"
+						data-aos-delay="200">
+						<div
+							class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+							<svg
+								class="w-6 h-6"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-blue-700 mb-2">
+							Feeding Techniques
+						</h3>
+						<p class="text-gray-700 mb-4">
+							Gentle guidance for parents and toddlers on developing healthy
+							eating habits and self-feeding skills.
+						</p>
+						<div class="flex items-center text-sm text-gray-500 mb-4">
+							<span class="bg-blue-200 text-blue-800 px-2 py-1 rounded mr-2"
+								>Ages 0-2</span
+							>
+							<span>30 min sessions</span>
+						</div>
+						<a
+							href="#"
+							class="text-blue-600 font-bold hover:underline flex items-center">
+							Learn More
+							<svg
+								class="w-4 h-4 ml-1"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</a>
+					</div>
+
+					<div
+						class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-lg p-6 border-l-4 border-purple-500"
+						data-aos="fade-up"
+						data-aos-delay="300">
+						<div
+							class="bg-purple-500 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+							<svg
+								class="w-6 h-6"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-purple-700 mb-2">
+							Speaking &amp; Communication
+						</h3>
+						<p class="text-gray-700 mb-4">
+							Fun exercises to build vocabulary, pronunciation, and confidence
+							in verbal expression.
+						</p>
+						<div class="flex items-center text-sm text-gray-500 mb-4">
+							<span class="bg-purple-200 text-purple-800 px-2 py-1 rounded mr-2"
+								>Ages 3-6</span
+							>
+							<span>45 min sessions</span>
+						</div>
+						<a
+							href="#"
+							class="text-purple-600 font-bold hover:underline flex items-center">
+							Learn More
+							<svg
+								class="w-4 h-4 ml-1"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</a>
+					</div>
+
+					<div
+						class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl shadow-lg p-6 border-l-4 border-yellow-500"
+						data-aos="fade-up"
+						data-aos-delay="400">
+						<div
+							class="bg-yellow-500 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+							<svg
+								class="w-6 h-6"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold text-yellow-700 mb-2">
+							Social Skills
+						</h3>
+						<p class="text-gray-700 mb-4">
+							Group activities that teach sharing, turn-taking, and making
+							friends in a supportive environment.
+						</p>
+						<div class="flex items-center text-sm text-gray-500 mb-4">
+							<span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded mr-2"
+								>Ages 4-8</span
+							>
+							<span>60 min sessions</span>
+						</div>
+						<a
+							href="#"
+							class="text-yellow-600 font-bold hover:underline flex items-center">
+							Learn More
+							<svg
+								class="w-4 h-4 ml-1"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="mt-12 text-center">
+					<a
+						href="#"
+						class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105"
+						>View All Classes</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- Events Calendar -->
+		<section
+			class="py-16 bg-gradient-to-r from-indigo-50 to-purple-50"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center text-purple-700 mb-4">
+					Upcoming Events
+				</h2>
+				<p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+					Join us for special activities and themed events throughout the month!
+				</p>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="zoom-in"
+						data-aos-delay="100">
+						<div class="bg-pink-600 text-white p-4">
+							<div class="flex justify-between items-center">
+								<div>
+									<span class="text-2xl font-bold">15</span>
+									<span class="ml-2">June</span>
+								</div>
+								<span
+									class="bg-white text-pink-600 px-3 py-1 rounded-full text-sm font-bold"
+									>Saturday</span
+								>
+							</div>
+						</div>
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">Parent-Child Yoga</h3>
+							<p class="text-gray-600 mb-4">
+								A fun bonding experience with gentle stretches and poses for
+								parents and kids.
+							</p>
+							<div class="flex items-center text-gray-500 mb-4">
+								<svg
+									class="w-5 h-5 mr-2"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<span>10:00 AM - 11:30 AM</span>
+							</div>
+							<a
+								href="#"
+								class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-lg transition"
+								>Register</a
+							>
+						</div>
+					</div>
+
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="zoom-in"
+						data-aos-delay="200">
+						<div class="bg-green-600 text-white p-4">
+							<div class="flex justify-between items-center">
+								<div>
+									<span class="text-2xl font-bold">22</span>
+									<span class="ml-2">June</span>
+								</div>
+								<span
+									class="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-bold"
+									>Saturday</span
+								>
+							</div>
+						</div>
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">Craft Day: Ocean Friends</h3>
+							<p class="text-gray-600 mb-4">
+								Create underwater creatures and learn about ocean conservation.
+							</p>
+							<div class="flex items-center text-gray-500 mb-4">
+								<svg
+									class="w-5 h-5 mr-2"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<span>1:00 PM - 3:00 PM</span>
+							</div>
+							<a
+								href="#"
+								class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition"
+								>Register</a
+							>
+						</div>
+					</div>
+
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="zoom-in"
+						data-aos-delay="300">
+						<div class="bg-orange-600 text-white p-4">
+							<div class="flex justify-between items-center">
+								<div>
+									<span class="text-2xl font-bold">29</span>
+									<span class="ml-2">June</span>
+								</div>
+								<span
+									class="bg-white text-orange-600 px-3 py-1 rounded-full text-sm font-bold"
+									>Saturday</span
+								>
+							</div>
+						</div>
+						<div class="p-6">
+							<h3 class="text-xl font-bold mb-2">Summer Kickoff Party</h3>
+							<p class="text-gray-600 mb-4">
+								Water games, ice cream, and summer fun to celebrate the season!
+							</p>
+							<div class="flex items-center text-gray-500 mb-4">
+								<svg
+									class="w-5 h-5 mr-2"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<span>11:00 AM - 4:00 PM</span>
+							</div>
+							<a
+								href="#"
+								class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-lg transition"
+								>Register</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-12 text-center">
+					<a
+						href="#"
+						class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105"
+						>View Full Calendar</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- Membership Plans -->
+		<section
+			id="membership"
+			class="py-16 bg-white"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center text-purple-700 mb-4">
+					Membership Plans
+				</h2>
+				<p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+					Join our KidsZone family and enjoy exclusive benefits and unlimited
+					fun!
+				</p>
+
+				<div class="overflow-x-auto">
+					<table
+						class="w-full border-collapse rounded-lg overflow-hidden shadow-lg"
+						data-aos="fade-up">
+						<thead>
+							<tr class="bg-purple-700 text-white">
+								<th class="p-4 text-left">Membership Features</th>
+								<th class="p-4 text-center">
+									Basic<br /><span class="text-sm font-normal">$39/month</span>
+								</th>
+								<th class="p-4 text-center bg-purple-800">
+									Premium<br /><span class="text-sm font-normal"
+										>$69/month</span
+									>
+								</th>
+								<th class="p-4 text-center">
+									Family<br /><span class="text-sm font-normal">$99/month</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="border-b border-gray-200">
+								<td class="p-4 font-medium">Play Area Access</td>
+								<td class="p-4 text-center">2 visits/week</td>
+								<td class="p-4 text-center bg-purple-50">Unlimited</td>
+								<td class="p-4 text-center">Unlimited</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="p-4 font-medium">Number of Children</td>
+								<td class="p-4 text-center">1 child</td>
+								<td class="p-4 text-center bg-purple-50">1 child</td>
+								<td class="p-4 text-center">Up to 3 children</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="p-4 font-medium">Guest Passes</td>
+								<td class="p-4 text-center">1/month</td>
+								<td class="p-4 text-center bg-purple-50">3/month</td>
+								<td class="p-4 text-center">5/month</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="p-4 font-medium">Party Discount</td>
+								<td class="p-4 text-center">5%</td>
+								<td class="p-4 text-center bg-purple-50">10%</td>
+								<td class="p-4 text-center">15%</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="p-4 font-medium">Class Discount</td>
+								<td class="p-4 text-center">—</td>
+								<td class="p-4 text-center bg-purple-50">10%</td>
+								<td class="p-4 text-center">15%</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="p-4 font-medium">Priority Event Registration</td>
+								<td class="p-4 text-center">
+									<svg
+										class="w-6 h-6 text-red-500 mx-auto"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</td>
+								<td class="p-4 text-center bg-purple-50">
+									<svg
+										class="w-6 h-6 text-green-500 mx-auto"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</td>
+								<td class="p-4 text-center">
+									<svg
+										class="w-6 h-6 text-green-500 mx-auto"
+										fill="currentColor"
+										viewBox="0 0 20 20">
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="p-4 font-medium">Free Bowling Session</td>
+								<td class="p-4 text-center">—</td>
+								<td class="p-4 text-center bg-purple-50">1/month</td>
+								<td class="p-4 text-center">2/month</td>
+							</tr>
+							<tr>
+								<td class="p-4"></td>
+								<td class="p-4 text-center">
+									<button
+										class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition">
+										Join Now
+									</button>
+								</td>
+								<td class="p-4 text-center bg-purple-50">
+									<button
+										class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-6 rounded-lg transition transform scale-110">
+										Join Now
+									</button>
+								</td>
+								<td class="p-4 text-center">
+									<button
+										class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition">
+										Join Now
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="mt-8 text-center text-gray-600">
+					<p>
+						All memberships include a one-time $25 registration fee. Annual
+						plans available with 2 months free!
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gift Cards -->
+		<section
+			class="py-16 bg-gradient-to-r from-yellow-100 to-orange-100"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col md:flex-row items-center">
+					<div
+						class="md:w-1/2 mb-10 md:mb-0"
+						data-aos="fade-right">
+						<h2 class="text-4xl font-bold text-yellow-800 mb-4">
+							Give the Gift of Fun
+						</h2>
+						<p class="text-lg text-gray-700 mb-6">
+							KidsZone gift cards are perfect for birthdays, holidays, or just
+							because! Available in digital or physical formats.
+						</p>
+
+						<div class="grid grid-cols-3 gap-4 mb-8">
+							<div class="bg-white rounded-lg p-4 text-center shadow-md">
+								<p class="text-2xl font-bold text-yellow-600">$25</p>
+							</div>
+							<div
+								class="bg-white rounded-lg p-4 text-center shadow-md transform scale-110">
+								<p class="text-2xl font-bold text-yellow-600">$50</p>
+							</div>
+							<div class="bg-white rounded-lg p-4 text-center shadow-md">
+								<p class="text-2xl font-bold text-yellow-600">$100</p>
+							</div>
+						</div>
+
+						<div class="flex flex-wrap gap-4">
+							<button
+								class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition">
+								Buy Digital Card
+							</button>
+							<button
+								class="bg-white hover:bg-gray-100 text-yellow-700 font-bold py-3 px-6 rounded-full border-2 border-yellow-500 transition">
+								Buy Physical Card
+							</button>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2"
+						data-aos="fade-left">
+						<div class="relative">
+							<div
+								class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl shadow-xl p-8 transform rotate-3 max-w-md mx-auto">
+								<div class="bg-white bg-opacity-20 rounded-xl p-6">
+									<div class="flex justify-between items-center mb-8">
+										<div class="text-3xl font-bold text-white">KidsZone</div>
+										<div class="text-xl font-bold text-white">GIFT CARD</div>
+									</div>
+									<div
+										class="bg-white bg-opacity-30 h-12 rounded-lg mb-8"></div>
+									<div class="text-right text-white">
+										<p class="text-sm mb-1">Valid at all locations</p>
+										<p class="text-2xl font-bold">$50.00</p>
+									</div>
+								</div>
+							</div>
+							<div
+								class="absolute top-0 right-0 -mt-6 -mr-6 bg-red-500 text-white rounded-full w-20 h-20 flex items-center justify-center transform rotate-12 shadow-lg">
+								<p class="font-bold text-sm">Perfect<br />Gift!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Locations -->
+		<section
+			id="locations"
+			class="py-16 bg-white"
+			data-aos="fade-up">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center text-purple-700 mb-4">
+					Our Locations
+				</h2>
+				<p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+					Find the KidsZone nearest to you!
+				</p>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="fade-up"
+						data-aos-delay="100">
+						<div class="bg-blue-600 text-white p-4">
+							<h3 class="text-xl font-bold">Downtown Center</h3>
+						</div>
+						<div class="p-6">
+							<div class="flex items-start mb-4">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<p class="text-gray-700">
+									123 Main Street<br />Cityville, ST 12345
+								</p>
+							</div>
+							<div class="flex items-start mb-4">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+								</svg>
+								<p class="text-gray-700">(555) 123-4567</p>
+							</div>
+							<div class="flex items-start mb-6">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<div>
+									<p class="text-gray-700 font-medium">Hours:</p>
+									<p class="text-gray-700">
+										Mon-Thu: 10am - 7pm<br />Fri-Sun: 9am - 9pm
+									</p>
+								</div>
+							</div>
+							<a
+								href="https://maps.google.com"
+								target="_blank"
+								class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition"
+								>Get Directions</a
+							>
+						</div>
+					</div>
+
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="fade-up"
+						data-aos-delay="200">
+						<div class="bg-purple-600 text-white p-4">
+							<h3 class="text-xl font-bold">Westside Plaza</h3>
+						</div>
+						<div class="p-6">
+							<div class="flex items-start mb-4">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<p class="text-gray-700">
+									456 West Avenue<br />Cityville, ST 12346
+								</p>
+							</div>
+							<div class="flex items-start mb-4">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+								</svg>
+								<p class="text-gray-700">(555) 987-6543</p>
+							</div>
+							<div class="flex items-start mb-6">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<div>
+									<p class="text-gray-700 font-medium">Hours:</p>
+									<p class="text-gray-700">
+										Mon-Thu: 10am - 7pm<br />Fri-Sun: 9am - 9pm
+									</p>
+								</div>
+							</div>
+							<a
+								href="https://maps.google.com"
+								target="_blank"
+								class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition"
+								>Get Directions</a
+							>
+						</div>
+					</div>
+
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden border"
+						data-aos="fade-up"
+						data-aos-delay="300">
+						<div class="bg-pink-600 text-white p-4">
+							<h3 class="text-xl font-bold">Eastside Mall</h3>
+						</div>
+						<div class="p-6">
+							<div class="flex items-start mb-4">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<p class="text-gray-700">
+									456 West Avenue<br />Cityville, ST 12346
+								</p>
+							</div>
+							<div class="flex items-start mb-4">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+								</svg>
+								<p class="text-gray-700">(555) 987-6543</p>
+							</div>
+							<div class="flex items-start mb-6">
+								<svg
+									class="w-5 h-5 text-gray-500 mt-1 mr-3"
+									fill="currentColor"
+									viewBox="0 0 20 20">
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<div>
+									<p class="text-gray-700 font-medium">Hours:</p>
+									<p class="text-gray-700">
+										Mon-Thu: 10am - 7pm<br />Fri-Sun: 9am - 9pm
+									</p>
+								</div>
+							</div>
+							<a
+								href="https://maps.google.com"
+								target="_blank"
+								class="inline-block bg-pink-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition"
+								>Get Directions</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Initialize AOS
+				AOS.init({
+					duration: 800,
+					easing: "ease-in-out",
+					once: true,
+				});
+            });
+                </script/>
+	</body>
+</html>
