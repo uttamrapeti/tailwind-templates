@@ -8,7 +8,7 @@ A curated collection of modern, responsive website templates built with **Tailwi
 
 | Template Name                 | Preview                             | Live Demo                        |
 |------------------------------|-------------------------------------|----------------------------------|
-| E-commerce Homepage          | ![](ecommerce-homepage/preview.png) | [Live](https://tailwind-templates-red.vercel.app/ecommerce/) |
+| E-commerce Homepage          | ![](ecommerce/preview.png) | [Live](https://tailwind-templates-red.vercel.app/ecommerce/) |
 | MedSPA Landing Page          | ![](medspa-landing/preview.png)     | [Live](https://tailwind-templates-red.vercel.app/MedSpa/) |
 | KidsPlay Online Booking Site | ![](kidsplay-booking/preview.png)   | [Live](https://tailwind-templates-red.vercel.app/KidsPlay/) |
 | Bowling Activities Landing   | ![](bowling-landing/preview.png)    | [Live](https://bowling.vercel.app) |
