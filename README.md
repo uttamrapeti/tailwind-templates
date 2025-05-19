@@ -8,11 +8,11 @@ A curated collection of modern, responsive website templates built with **Tailwi
 
 | Template Name                 | Preview                             | Live Demo                        |
 |------------------------------|-------------------------------------|----------------------------------|
-| E-commerce Homepage          | ![](ecommerce-homepage/preview.png) | [Live](https://ecommerce.vercel.app) |
-| MedSPA Landing Page          | ![](medspa-landing/preview.png)     | [Live](https://medspa.vercel.app) |
-| KidsPlay Online Booking Site | ![](kidsplay-booking/preview.png)   | [Live](https://kidsplay.vercel.app) |
+| E-commerce Homepage          | ![](ecommerce-homepage/preview.png) | [Live](https://tailwind-templates-red.vercel.app/ecommerce/) |
+| MedSPA Landing Page          | ![](medspa-landing/preview.png)     | [Live](https://tailwind-templates-red.vercel.app/MedSpa/) |
+| KidsPlay Online Booking Site | ![](kidsplay-booking/preview.png)   | [Live](https://tailwind-templates-red.vercel.app/KidsPlay/) |
 | Bowling Activities Landing   | ![](bowling-landing/preview.png)    | [Live](https://bowling.vercel.app) |
-| Online Education Site        | ![](education-site/preview.png)     | [Live](https://education.vercel.app) |
+| Online Education Site        | ![](education-site/preview.png)     | [Live](https://tailwind-templates-red.vercel.app/education/) |
 | Real Estate Listings UI      | ![](real-estate-ui/preview.png)     | [Live](https://realestate.vercel.app) |
 | App Promo Landing Page       | ![](app-promo/preview.png)          | [Live](https://apppromo.vercel.app) |
 | UI/UX Agency Portfolio       | ![](agency-portfolio/preview.png)   | [Live](https://agency.vercel.app) |
