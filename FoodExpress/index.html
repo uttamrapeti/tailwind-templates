@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>EduSphere - Online Learning Platform</title>
+		<link
+			rel="icon"
+			type="image/png"
+			href="assets/tw-favicon.png" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+			rel="stylesheet" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+			defer=""></script>
+		<style>
+			body {
+				font-family: "Poppins", sans-serif;
+				scroll-behavior: smooth;
+			}
+			.gradient-bg {
+				background: linear-gradient(135deg, #ff7a00, #ff4694);
+			}
+			.gradient-text {
+				background: linear-gradient(90deg, #ff7a00, #ff4694);
+                background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			.card-hover:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+					0 10px 10px -5px rgba(0, 0, 0, 0.04);
+			}
+			.active {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			.hero-pattern {
+				background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+			}
+		</style>
+	</head>
+	<body>
+		<header class="bg-white shadow-md fixed w-full z-50">
+			<div
+				class="container mx-auto px-4 py-3 flex justify-between items-center">
+				<div class="flex items-center">
+					<svg
+						class="w-10 h-10 text-orange-500"
+						fill="currentColor"
+						viewBox="0 0 20 20">
+						<path
+							d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+					</svg>
+					<h1 class="ml-2 text-2xl font-bold gradient-text">FoodExpress</h1>
+				</div>
+
+				<!-- Desktop Navigation -->
+				<nav class="hidden md:flex space-x-8">
+					<a
+						href="#home"
+						class="text-gray-700 hover:text-orange-500 font-medium transition duration-300"
+						>Home</a
+					>
+					<a
+						href="#menu"
+						class="text-gray-700 hover:text-orange-500 font-medium transition duration-300"
+						>Menu</a
+					>
+					<a
+						href="#why-us"
+						class="text-gray-700 hover:text-orange-500 font-medium transition duration-300"
+						>Why Us</a
+					>
+					<a
+						href="#delivery"
+						class="text-gray-700 hover:text-orange-500 font-medium transition duration-300"
+						>Delivery</a
+					>
+					<a
+						href="#support"
+						class="text-gray-700 hover:text-orange-500 font-medium transition duration-300"
+						>Support</a
+					>
+					<a
+						href="#contact"
+						class="text-gray-700 hover:text-orange-500 font-medium transition duration-300"
+						>Contact</a
+					>
+				</nav>
+
+				<div class="hidden md:flex items-center">
+					<button
+						class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition duration-300 animate__animated animate__pulse animate__infinite animate__slow">
+						Order Now
+					</button>
+				</div>
+
+				<!-- Mobile menu button -->
+				<div class="md:hidden">
+					<button
+						@click="mobileMenuOpen = !mobileMenuOpen"
+						class="text-gray-700 focus:outline-none">
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<!-- Mobile Navigation -->
+			<div
+				x-show="mobileMenuOpen"
+				@click.away="mobileMenuOpen = false"
+				class="md:hidden bg-white shadow-lg absolute w-full">
+				<div class="px-4 py-3 space-y-3">
+					<a
+						href="#home"
+						class="block text-gray-700 hover:text-orange-500 font-medium"
+						>Home</a
+					>
+					<a
+						href="#menu"
+						class="block text-gray-700 hover:text-orange-500 font-medium"
+						>Menu</a
+					>
+					<a
+						href="#why-us"
+						class="block text-gray-700 hover:text-orange-500 font-medium"
+						>Why Us</a
+					>
+					<a
+						href="#delivery"
+						class="block text-gray-700 hover:text-orange-500 font-medium"
+						>Delivery</a
+					>
+					<a
+						href="#support"
+						class="block text-gray-700 hover:text-orange-500 font-medium"
+						>Support</a
+					>
+					<a
+						href="#contact"
+						class="block text-gray-700 hover:text-orange-500 font-medium"
+						>Contact</a
+					>
+					<button
+						class="gradient-bg text-white px-6 py-2 rounded-full font-medium w-full">
+						Order Now
+					</button>
+				</div>
+			</div>
+		</header>
+		<section
+			id="home"
+			class="pt-24 pb-16 md:pt-32 md:pb-24 hero-pattern">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col md:flex-row items-center">
+					<div class="md:w-1/2 mb-10 md:mb-0">
+						<h1
+							class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate__animated animate__fadeInUp">
+							Delicious Food <br />
+							<span class="gradient-text">Delivered Fast</span>
+						</h1>
+						<p
+							class="text-gray-600 text-lg mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+							Experience the best food delivery service in town. Fresh
+							ingredients, amazing taste, and lightning-fast delivery to your
+							doorstep.
+						</p>
+						<div
+							class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate__animated animate__fadeInUp animate__delay-2s">
+							<button
+								class="gradient-bg text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300">
+								Order Now
+							</button>
+							<button
+								class="border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-full font-medium hover:bg-orange-50 transition duration-300">
+								View Menu
+							</button>
+						</div>
+					</div>
+					<div class="md:w-1/2 animate__animated animate__fadeInRight">
+						<div class="relative">
+							<div
+								class="absolute -top-6 -left-6 w-24 h-24 bg-yellow-200 rounded-full opacity-70"></div>
+							<div
+								class="absolute -bottom-6 -right-6 w-32 h-32 bg-orange-200 rounded-full opacity-70"></div>
+							<svg
+								class="w-full h-auto"
+								viewBox="0 0 500 400"
+								xmlns="http://www.w3.org/2000/svg">
+								<ellipse
+									cx="250"
+									cy="200"
+									rx="200"
+									ry="180"
+									fill="#FFF0E5"></ellipse>
+								<path
+									d="M320,220 C320,276.885 273.885,323 217,323 C160.115,323 114,276.885 114,220 C114,163.115 160.115,117 217,117 C273.885,117 320,163.115 320,220 Z"
+									fill="#FFA07A"></path>
+								<path
+									d="M217,140 C178.399,140 147,171.399 147,210 C147,248.601 178.399,280 217,280 C255.601,280 287,248.601 287,210 C287,171.399 255.601,140 217,140 Z M217,260 C189.386,260 167,237.614 167,210 C167,182.386 189.386,160 217,160 C244.614,160 267,182.386 267,210 C267,237.614 244.614,260 217,260 Z"
+									fill="#FF7043"></path>
+								<path
+									d="M217,180 C200.431,180 187,193.431 187,210 C187,226.569 200.431,240 217,240 C233.569,240 247,226.569 247,210 C247,193.431 233.569,180 217,180 Z"
+									fill="#E64A19"></path>
+								<path
+									d="M350,150 C350,172.091 332.091,190 310,190 C287.909,190 270,172.091 270,150 C270,127.909 287.909,110 310,110 C332.091,110 350,127.909 350,150 Z"
+									fill="#4CAF50"></path>
+								<path
+									d="M310,125 C296.193,125 285,136.193 285,150 C285,163.807 296.193,175 310,175 C323.807,175 335,163.807 335,150 C335,136.193 323.807,125 310,125 Z"
+									fill="#388E3C"></path>
+								<path
+									d="M150,170 C150,187.673 135.673,202 118,202 C100.327,202 86,187.673 86,170 C86,152.327 100.327,138 118,138 C135.673,138 150,152.327 150,170 Z"
+									fill="#F44336"></path>
+								<path
+									d="M118,150 C107.507,150 99,158.507 99,169 C99,179.493 107.507,188 118,188 C128.493,188 137,179.493 137,169 C137,158.507 128.493,150 118,150 Z"
+									fill="#D32F2F"></path>
+								<path
+									d="M380,240 C380,257.673 365.673,272 348,272 C330.327,272 316,257.673 316,240 C316,222.327 330.327,208 348,208 C365.673,208 380,222.327 380,240 Z"
+									fill="#FFC107"></path>
+								<path
+									d="M348,220 C337.507,220 329,228.507 329,239 C329,249.493 337.507,258 348,258 C358.493,258 367,249.493 367,239 C367,228.507 358.493,220 348,220 Z"
+									fill="#FFA000"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			id="menu"
+			class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">New on Our Menu</h2>
+					<p class="text-gray-600 max-w-2xl mx-auto">
+						Discover our latest culinary creations made with fresh ingredients
+						and crafted with love by our expert chefs.
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Food Item 1 -->
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-500">
+						<div class="h-48 bg-orange-100 relative overflow-hidden">
+							<svg
+								class="absolute inset-0 w-full h-full"
+								viewBox="0 0 200 200"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="100"
+									cy="100"
+									r="80"
+									fill="#FFCCBC"></circle>
+								<circle
+									cx="100"
+									cy="100"
+									r="60"
+									fill="#FFAB91"></circle>
+								<circle
+									cx="100"
+									cy="100"
+									r="40"
+									fill="#FF8A65"></circle>
+								<circle
+									cx="70"
+									cy="80"
+									r="10"
+									fill="#FFFFFF"
+									opacity="0.6"></circle>
+								<circle
+									cx="120"
+									cy="70"
+									r="8"
+									fill="#FFFFFF"
+									opacity="0.6"></circle>
+								<circle
+									cx="80"
+									cy="120"
+									r="12"
+									fill="#FFFFFF"
+									opacity="0.6"></circle>
+							</svg>
+						</div>
+						<div class="p-6">
+							<div class="flex justify-between items-center mb-4">
+								<h3 class="text-xl font-bold">Spicy Fusion Burger</h3>
+								<span
+									class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium"
+									>New</span
+								>
+							</div>
+							<p class="text-gray-600 mb-4">
+								Our signature burger with jalapeños, pepper jack cheese, and
+								spicy mayo sauce.
+							</p>
+							<div class="flex justify-between items-center">
+								<span class="text-xl font-bold gradient-text">$12.99</span>
+								<button
+									class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition duration-300">
+									Add to Cart
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Food Item 2 -->
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-500">
+						<div class="h-48 bg-green-100 relative overflow-hidden">
+							<svg
+								class="absolute inset-0 w-full h-full"
+								viewBox="0 0 200 200"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect
+									x="40"
+									y="60"
+									width="120"
+									height="80"
+									rx="5"
+									fill="#A5D6A7"></rect>
+								<rect
+									x="50"
+									y="70"
+									width="100"
+									height="60"
+									rx="3"
+									fill="#81C784"></rect>
+								<circle
+									cx="80"
+									cy="100"
+									r="15"
+									fill="#4CAF50"></circle>
+								<circle
+									cx="120"
+									cy="100"
+									r="15"
+									fill="#4CAF50"></circle>
+								<circle
+									cx="80"
+									cy="100"
+									r="5"
+									fill="#2E7D32"></circle>
+								<circle
+									cx="120"
+									cy="100"
+									r="5"
+									fill="#2E7D32"></circle>
+								<path
+									d="M70,130 Q100,150 130,130"
+									stroke="#2E7D32"
+									stroke-width="3"
+									fill="none"></path>
+							</svg>
+						</div>
+						<div class="p-6">
+							<div class="flex justify-between items-center mb-4">
+								<h3 class="text-xl font-bold">Avocado Quinoa Bowl</h3>
+								<span
+									class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-medium"
+									>Vegan</span
+								>
+							</div>
+							<p class="text-gray-600 mb-4">
+								Fresh avocado, quinoa, cherry tomatoes, and mixed greens with
+								lemon dressing.
+							</p>
+							<div class="flex justify-between items-center">
+								<span class="text-xl font-bold gradient-text">$10.99</span>
+								<button
+									class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition duration-300">
+									Add to Cart
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Food Item 3 -->
+					<div
+						class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition duration-500">
+						<div class="h-48 bg-red-100 relative overflow-hidden">
+							<svg
+								class="absolute inset-0 w-full h-full"
+								viewBox="0 0 200 200"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="100"
+									cy="100"
+									r="70"
+									fill="#FFCDD2"></circle>
+								<circle
+									cx="100"
+									cy="100"
+									r="60"
+									fill="#EF9A9A"></circle>
+								<path
+									d="M60,100 Q100,140 140,100 Q100,60 60,100"
+									fill="#E57373"></path>
+								<circle
+									cx="80"
+									cy="90"
+									r="5"
+									fill="#FFFFFF"
+									opacity="0.6"></circle>
+								<circle
+									cx="120"
+									cy="90"
+									r="5"
+									fill="#FFFFFF"
+									opacity="0.6"></circle>
+							</svg>
+						</div>
+						<div class="p-6">
+							<div class="flex justify-between items-center mb-4">
+								<h3 class="text-xl font-bold">Truffle Mushroom Pizza</h3>
+								<span
+									class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium"
+									>Premium</span
+								>
+							</div>
+							<p class="text-gray-600 mb-4">
+								Thin crust pizza with truffle oil, wild mushrooms, and
+								mozzarella cheese.
+							</p>
+							<div class="flex justify-between items-center">
+								<span class="text-xl font-bold gradient-text">$15.99</span>
+								<button
+									class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition duration-300">
+									Add to Cart
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center mt-12">
+					<button
+						class="border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-full font-medium hover:bg-orange-50 transition duration-300">
+						View Full Menu
+					</button>
+				</div>
+			</div>
+		</section>
+		<section
+			id="why-us"
+			class="py-16 bg-gray-50">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">
+						Why We're So Popular
+					</h2>
+					<p class="text-gray-600 max-w-2xl mx-auto">
+						Join thousands of satisfied customers who choose us for their food
+						delivery needs.
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<!-- Feature 1 -->
+					<div
+						class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition duration-500">
+						<div
+							class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg
+								class="w-8 h-8 text-white"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-3">Fast Delivery</h3>
+						<p class="text-gray-600">
+							We deliver your food while it's still hot and fresh, usually
+							within 30 minutes.
+						</p>
+					</div>
+
+					<!-- Feature 2 -->
+					<div
+						class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition duration-500">
+						<div
+							class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg
+								class="w-8 h-8 text-white"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-3">Quality Ingredients</h3>
+						<p class="text-gray-600">
+							We use only the freshest ingredients sourced from local suppliers.
+						</p>
+					</div>
+
+					<!-- Feature 3 -->
+					<div
+						class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition duration-500">
+						<div
+							class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg
+								class="w-8 h-8 text-white"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-3">Best Prices</h3>
+						<p class="text-gray-600">
+							Enjoy delicious meals at competitive prices with regular discounts
+							and offers.
+						</p>
+					</div>
+
+					<!-- Feature 4 -->
+					<div
+						class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition duration-500">
+						<div
+							class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+							<svg
+								class="w-8 h-8 text-white"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-3">Customer Satisfaction</h3>
+						<p class="text-gray-600">
+							Our 4.9/5 rating speaks for itself. We prioritize your
+							satisfaction above all.
+						</p>
+					</div>
+				</div>
+
+				<!-- Stats -->
+				<div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="bg-white rounded-xl shadow-lg p-8 text-center">
+						<h3 class="text-4xl font-bold gradient-text mb-2">0%</h3>
+						<p class="text-gray-600">Customer Satisfaction</p>
+					</div>
+
+					<div class="bg-white rounded-xl shadow-lg p-8 text-center">
+						<h3 class="text-4xl font-bold gradient-text mb-2">0+</h3>
+						<p class="text-gray-600">Daily Orders</p>
+					</div>
+
+					<div class="bg-white rounded-xl shadow-lg p-8 text-center">
+						<h3 class="text-4xl font-bold gradient-text mb-2">0+</h3>
+						<p class="text-gray-600">Cities Covered</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			id="delivery"
+			class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="flex flex-col md:flex-row items-center">
+					<div class="md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-8">
+						<div class="relative">
+							<div
+								class="absolute -top-6 -left-6 w-24 h-24 bg-orange-200 rounded-full opacity-70"></div>
+							<div
+								class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-200 rounded-full opacity-70"></div>
+							<svg
+								class="w-full h-auto relative z-10"
+								viewBox="0 0 400 300"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect
+									x="50"
+									y="150"
+									width="300"
+									height="100"
+									rx="10"
+									fill="#F5F5F5"></rect>
+								<rect
+									x="70"
+									y="170"
+									width="260"
+									height="60"
+									rx="5"
+									fill="#EEEEEE"></rect>
+								<circle
+									cx="100"
+									cy="200"
+									r="20"
+									fill="#FF7043"></circle>
+								<circle
+									cx="160"
+									cy="200"
+									r="20"
+									fill="#FF7043"></circle>
+								<circle
+									cx="220"
+									cy="200"
+									r="20"
+									fill="#FF7043"></circle>
+								<circle
+									cx="280"
+									cy="200"
+									r="20"
+									fill="#FF7043"></circle>
+								<rect
+									x="100"
+									y="50"
+									width="200"
+									height="100"
+									rx="10"
+									fill="#FF7043"></rect>
+								<rect
+									x="120"
+									y="70"
+									width="160"
+									height="60"
+									rx="5"
+									fill="#FF5722"></rect>
+								<path
+									d="M150,130 L150,150"
+									stroke="#FF7043"
+									stroke-width="4"></path>
+								<path
+									d="M250,130 L250,150"
+									stroke="#FF7043"
+									stroke-width="4"></path>
+								<circle
+									cx="150"
+									cy="200"
+									r="10"
+									fill="#E64A19"></circle>
+								<circle
+									cx="250"
+									cy="200"
+									r="10"
+									fill="#E64A19"></circle>
+								<path
+									d="M50,250 C100,270 300,270 350,250"
+									stroke="#BDBDBD"
+									stroke-width="2"
+									stroke-dasharray="5,5"
+									fill="none"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="md:w-1/2">
+						<h2 class="text-3xl md:text-4xl font-bold mb-6">
+							Lightning Fast Delivery
+						</h2>
+						<p class="text-gray-600 mb-6">
+							We understand that time is precious. That's why we've optimized
+							our delivery process to ensure your food arrives hot and fresh in
+							record time.
+						</p>
+
+						<div class="space-y-6">
+							<div class="flex items-start">
+								<div
+									class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4 shrink-0">
+									<svg
+										class="w-6 h-6 text-white"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-xl font-bold mb-2">30-Minute Guarantee</h3>
+									<p class="text-gray-600">
+										We promise to deliver your order within 30 minutes or you
+										get a discount on your next order.
+									</p>
+								</div>
+							</div>
+
+							<div class="flex items-start">
+								<div
+									class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4 shrink-0">
+									<svg
+										class="w-6 h-6 text-white"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-xl font-bold mb-2">Live Tracking</h3>
+									<p class="text-gray-600">
+										Track your order in real-time from our kitchen to your
+										doorstep with our user-friendly app.
+									</p>
+								</div>
+							</div>
+
+							<div class="flex items-start">
+								<div
+									class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4 shrink-0">
+									<svg
+										class="w-6 h-6 text-white"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-xl font-bold mb-2">Strategic Locations</h3>
+									<p class="text-gray-600">
+										Our multiple kitchens across the city ensure we're always
+										close to you for faster delivery.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<button
+							class="mt-8 gradient-bg text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300">
+							Check Delivery Area
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			id="support"
+			class="py-16 bg-gray-50">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">Customer Support</h2>
+					<p class="text-gray-600 max-w-2xl mx-auto">
+						We're here to help you with any questions or concerns you might have
+						about our services.
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- FAQ -->
+					<div class="col-span-1 md:col-span-2">
+						<div class="bg-white rounded-xl shadow-lg p-8">
+							<h3 class="text-2xl font-bold mb-6">
+								Frequently Asked Questions
+							</h3>
+
+							<div class="mb-4">
+								<button
+									class="flex justify-between items-center w-full py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition duration-300">
+									<span class="font-medium">How do I place an order?</span>
+									<svg
+										class="w-5 h-5 transform transition-transform duration-300"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M19 9l-7 7-7-7"></path>
+									</svg>
+								</button>
+								<div class="px-4 py-3 text-gray-600">
+									You can place an order through our website, mobile app, or by
+									calling our customer service. Simply browse the menu, select
+									your items, add them to cart, and proceed to checkout.
+								</div>
+							</div>
+
+							<div class="mb-4">
+								<button
+									class="flex justify-between items-center w-full py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition duration-300">
+									<span class="font-medium">What are your delivery hours?</span>
+									<svg
+										class="w-5 h-5 transform transition-transform duration-300"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M19 9l-7 7-7-7"></path>
+									</svg>
+								</button>
+								<div class="px-4 py-3 text-gray-600">
+									We deliver from 10:00 AM to 10:00 PM, seven days a week. Last
+									orders are accepted 30 minutes before closing time.
+								</div>
+							</div>
+
+							<div class="mb-4">
+								<button
+									class="flex justify-between items-center w-full py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition duration-300">
+									<span class="font-medium"
+										>Do you offer vegetarian options?</span
+									>
+									<svg
+										class="w-5 h-5 transform transition-transform duration-300"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M19 9l-7 7-7-7"></path>
+									</svg>
+								</button>
+								<div class="px-4 py-3 text-gray-600">
+									Yes, we have a wide range of vegetarian and vegan options
+									available on our menu. You can filter menu items by dietary
+									preferences on our website and app.
+								</div>
+							</div>
+
+							<div>
+								<button
+									class="flex justify-between items-center w-full py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition duration-300">
+									<span class="font-medium"
+										>What if my order is late or incorrect?</span
+									>
+									<svg
+										class="w-5 h-5 transform transition-transform duration-300"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M19 9l-7 7-7-7"></path>
+									</svg>
+								</button>
+								<div class="px-4 py-3 text-gray-600">
+									We strive for perfection, but if there's an issue with your
+									order, please contact our customer service immediately. We'll
+									make it right with a refund, discount, or replacement.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Contact Info -->
+					<div class="col-span-1">
+						<div class="bg-white rounded-xl shadow-lg p-8">
+							<h3 class="text-2xl font-bold mb-6">Contact Us</h3>
+
+							<div class="space-y-6">
+								<div class="flex items-start">
+									<div
+										class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center mr-4 shrink-0">
+										<svg
+											class="w-5 h-5 text-white"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+										</svg>
+									</div>
+									<div>
+										<h4 class="font-medium mb-1">Phone</h4>
+										<p class="text-gray-600">(555) 123-4567</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<div
+										class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center mr-4 shrink-0">
+										<svg
+											class="w-5 h-5 text-white"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+										</svg>
+									</div>
+									<div>
+										<h4 class="font-medium mb-1">Email</h4>
+										<p class="text-gray-600">support@foodexpress.com</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<div
+										class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center mr-4 shrink-0">
+										<svg
+											class="w-5 h-5 text-white"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										</svg>
+									</div>
+									<div>
+										<h4 class="font-medium mb-1">Hours</h4>
+										<p class="text-gray-600">
+											10:00 AM - 10:00 PM<br />7 days a week
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="mt-8 flex space-x-4">
+								<a
+									href="#"
+									class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition duration-300">
+									<svg
+										class="w-5 h-5 text-white"
+										fill="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="w-10 h-10 bg-pink-600 hover:bg-pink-700 rounded-full flex items-center justify-center transition duration-300">
+									<svg
+										class="w-5 h-5 text-white"
+										fill="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="w-10 h-10 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition duration-300">
+									<svg
+										class="w-5 h-5 text-white"
+										fill="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			id="contact"
+			class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto">
+					<div class="text-center mb-12">
+						<h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+						<p class="text-gray-600 max-w-2xl mx-auto">
+							Have a question, suggestion, or feedback? We'd love to hear from
+							you!
+						</p>
+					</div>
+
+					<div class="bg-white rounded-xl shadow-lg p-8">
+						<form class="space-y-6">
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+								<div>
+									<label
+										for="name"
+										class="block text-gray-700 font-medium mb-2"
+										>Name</label
+									>
+									<input
+										type="text"
+										id="name"
+										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition duration-300"
+										placeholder="Your name" />
+								</div>
+								<div>
+									<label
+										for="email"
+										class="block text-gray-700 font-medium mb-2"
+										>Email</label
+									>
+									<input
+										type="email"
+										id="email"
+										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition duration-300"
+										placeholder="Your email" />
+								</div>
+							</div>
+
+							<div>
+								<label
+									for="subject"
+									class="block text-gray-700 font-medium mb-2"
+									>Subject</label
+								>
+								<input
+									type="text"
+									id="subject"
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition duration-300"
+									placeholder="Subject" />
+							</div>
+
+							<div>
+								<label
+									for="message"
+									class="block text-gray-700 font-medium mb-2"
+									>Message</label
+								>
+								<textarea
+									id="message"
+									rows="5"
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition duration-300"
+									placeholder="Your message"></textarea>
+							</div>
+
+							<div class="flex items-center">
+								<input
+									type="checkbox"
+									id="subscribe"
+									class="w-5 h-5 text-orange-500 border-gray-300 rounded focus:ring-orange-500" />
+								<label
+									for="subscribe"
+									class="ml-2 text-gray-700"
+									>Subscribe to our newsletter for special offers</label
+								>
+							</div>
+
+							<div class="text-center">
+								<button
+									type="submit"
+									class="gradient-bg text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300">
+									Send Message
+								</button>
+							</div>
+
+							<div class="text-center text-sm text-gray-500">
+								This is a demo contact form. In a real implementation, this
+								would send data to a server.
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="gradient-bg text-white py-12">
+			<div class="container mx-auto px-4">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div>
+						<div class="flex items-center mb-6">
+							<svg
+								class="w-10 h-10 text-white"
+								fill="currentColor"
+								viewBox="0 0 20 20">
+								<path
+									d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+							</svg>
+							<h2 class="ml-2 text-2xl font-bold">FoodExpress</h2>
+						</div>
+						<p class="mb-6">
+							Delivering delicious food to your doorstep since 2015. Fast,
+							fresh, and always on time.
+						</p>
+						<div class="flex space-x-4">
+							<a
+								href="#"
+								class="w-10 h-10 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition duration-300">
+								<svg
+									class="w-5 h-5"
+									fill="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+								</svg>
+							</a>
+							<a
+								href="#"
+								class="w-10 h-10 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition duration-300">
+								<svg
+									class="w-5 h-5"
+									fill="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+								</svg>
+							</a>
+							<a
+								href="#"
+								class="w-10 h-10 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition duration-300">
+								<svg
+									class="w-5 h-5"
+									fill="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div>
+						<h3 class="text-lg font-bold mb-6">Quick Links</h3>
+						<ul class="space-y-3">
+							<li>
+								<a
+									href="#home"
+									class="hover:text-orange-200 transition duration-300"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="#menu"
+									class="hover:text-orange-200 transition duration-300"
+									>Menu</a
+								>
+							</li>
+							<li>
+								<a
+									href="#why-us"
+									class="hover:text-orange-200 transition duration-300"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="#delivery"
+									class="hover:text-orange-200 transition duration-300"
+									>Delivery</a
+								>
+							</li>
+							<li>
+								<a
+									href="#contact"
+									class="hover:text-orange-200 transition duration-300"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-lg font-bold mb-6">Contact Info</h3>
+						<ul class="space-y-3">
+							<li class="flex items-start">
+								<svg
+									class="w-5 h-5 mr-3 mt-1"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+								</svg>
+								<span>123 Food Street, Cuisine City, FC 98765</span>
+							</li>
+							<li class="flex items-start">
+								<svg
+									class="w-5 h-5 mr-3 mt-1"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+								</svg>
+								<span>(555) 123-4567</span>
+							</li>
+							<li class="flex items-start">
+								<svg
+									class="w-5 h-5 mr-3 mt-1"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+								</svg>
+								<span>support@foodexpress.com</span>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-lg font-bold mb-6">Download Our App</h3>
+						<p class="mb-4">
+							Get exclusive offers and track your orders in real-time with our
+							mobile app.
+						</p>
+						<div class="space-y-3">
+							<a
+								href="#"
+								class="flex items-center bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg px-4 py-2 transition duration-300">
+								Link
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
